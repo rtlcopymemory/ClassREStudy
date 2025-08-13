@@ -14,8 +14,14 @@ public:
 	static void staticFunction();
 	static int getStaticValue();
 	static void setStaticValue(int value);
+
 	virtual void virtualFunction(); // virtual function
 	void pureVirtualFunction();
+
+	int handleNumber(int number);
+	float handleNumber(float number);
+	double handleNumber(double number);
+	short handleNumber(short number);
 
 private:
 	int testValue;

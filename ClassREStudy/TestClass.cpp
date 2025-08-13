@@ -68,5 +68,37 @@ void TestClass::pureVirtualFunction()
 	TestClass::setStaticValue(-1);
 }
 
+int TestClass::handleNumber(int number)
+{
+	__asm {
+		db 0xB1, 0xB2, 0xB3, 0xB4, 0xB5, 0xB6
+	}
+	return 0;
+}
+
+float TestClass::handleNumber(float number)
+{
+	__asm {
+		db 0xC1, 0xC2, 0xC3, 0xC4, 0xC5, 0xC6
+	}
+	return 0.0f;
+}
+
+double TestClass::handleNumber(double number)
+{
+	__asm {
+		db 0xD1, 0xD2, 0xD3, 0xD4, 0xD5, 0xD6
+	}
+	return 0.0;
+}
+
+short TestClass::handleNumber(short number)
+{
+	__asm {
+		db 0xE1, 0xE2, 0xE3, 0xE4, 0xE5, 0xE6
+	}
+	return 0;
+}
+
 // Define the static member variable
 int TestClass::staticValue = 0;
