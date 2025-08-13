@@ -100,5 +100,15 @@ short TestClass::handleNumber(short number)
 	return 0;
 }
 
+template<typename T>
+T TestClass::handleNumberTemplate(T number)
+{
+	__asm {
+		db 0xA7, 0xB8, 0xC9, 0xDA, 0xEB, 0xFC
+	}
+
+	return number; // Just return the number as is for demonstration
+}
+
 // Define the static member variable
 int TestClass::staticValue = 0;

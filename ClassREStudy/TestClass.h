@@ -23,6 +23,9 @@ public:
 	double handleNumber(double number);
 	short handleNumber(short number);
 
+	template<typename T>
+	T handleNumberTemplate(T number);
+
 private:
 	int testValue;
 	static int staticValue;

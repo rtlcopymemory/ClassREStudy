@@ -26,6 +26,9 @@ int main()
 	test->handleNumber(2.718);						// Double
 	test->handleNumber(static_cast<short>(7));		// Short
 
+	test->handleNumberTemplate(100);				// Template with int
+	test->handleNumberTemplate(100.);				// Template with double
+
 	delete test;
 
     std::cout << "Hello World!\n";
