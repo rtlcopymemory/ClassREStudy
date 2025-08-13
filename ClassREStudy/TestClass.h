@@ -24,7 +24,11 @@ public:
 	short handleNumber(short number);
 
 	template<typename T>
-	T handleNumberTemplate(T number);
+	T handleNumberTemplate(T number) {
+	    volatile unsigned char marker[] = { 0xA7, 0xB8, 0xC9, 0xDA, 0xEB, 0xFC };
+	    (void)marker;
+	    return number;
+	}
 
 private:
 	int testValue;
