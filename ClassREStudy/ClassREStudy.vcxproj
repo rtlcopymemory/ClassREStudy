@@ -125,7 +125,6 @@
   <ItemGroup>
     <ClCompile Include="ClassREStudy.cpp" />
     <ClCompile Include="TestClass.cpp" />
-    <ClCompile Include="VirtualBase.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TestClass.h" />
